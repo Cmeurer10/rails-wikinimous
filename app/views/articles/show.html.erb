@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<p>Posted: <%= @article.created_at %></p>
+<p><%= @article.content %></p>
+<%= link_to("Edit this article", "/articles/#{@article.id}/edit") %>
+<%= link_to("Delete this article", "/articles/#{@article.id}", method: "delete") %>
+<%= link_to("See all articles", "/articles") %>
